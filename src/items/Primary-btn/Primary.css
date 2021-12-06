@@ -1,0 +1,27 @@
+.btn-primary {
+  background: white;
+  text-transform: uppercase;
+  padding: 16px 40px;
+  border: 2px solid white;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: 0.5s;
+  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.54);
+  font-weight: bold;
+  margin: 2px;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+  box-shadow: none;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 700px) {
+  .btn-primary {
+    padding: 12px 25px;
+    font-size: 12px;
+  }
+}

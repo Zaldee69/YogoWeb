@@ -1,0 +1,31 @@
+.btn-secondary {
+  background: #730ad4;
+  text-transform: uppercase;
+  padding: 16px 35px;
+  border: 2px solid white;
+  border-radius: 6px;
+  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.54);
+  margin: 2px;
+  color: white;
+  transition: 0.5s;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-secondary:hover {
+  cursor: pointer;
+  box-shadow: none;
+  background: #680fbb;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 700px) {
+  .btn-secondary {
+    margin-left: 0;
+    padding: 12px 18px;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,28 @@
+.features-col {
+  flex-basis: 20%;
+  margin: 10px 5px;
+  border-radius: 10px;
+  transition: 1s;
+  padding: 0 10px;
+}
+
+.features-col:hover {
+  background: #730ad4;
+  transition: 1s;
+  color: white;
+}
+
+.features-title {
+  text-align: center;
+}
+
+.features-col .features-title img {
+  width: 50px;
+  margin-top: 50px;
+}
+
+/* @media only screen and (max-width: 600px) {
+  .features-col {
+    
+  }
+} */

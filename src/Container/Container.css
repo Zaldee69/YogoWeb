@@ -1,0 +1,25 @@
+.container {
+  background: #730ad4;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 724px) {
+  .container {
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding-bottom: 20px;
+  }
+}

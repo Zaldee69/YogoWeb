@@ -1,0 +1,40 @@
+.explore-container-row {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 70px auto 0;
+  align-items: center;
+}
+
+.explore-left-col {
+  flex-basis: 50%;
+}
+
+.explore-right-col {
+  flex-basis: 50%;
+}
+
+.explore-left-col img {
+  width: 70%;
+}
+
+.left-title h1 {
+  font-size: 38px;
+  font-weight: 500;
+}
+.left-title p {
+  color: #777;
+}
+
+@media only screen and (max-width: 600px) {
+  .explore-container-row {
+    flex-direction: column;
+  }
+  .explore-left-row {
+    flex-basis: 100%;
+  }
+
+  .explore-left-col img {
+    width: 100%;
+  }
+}

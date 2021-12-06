@@ -1,0 +1,130 @@
+.nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 90px;
+  height: 100px;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 3;
+
+  background: #730ad4;
+}
+
+.nav-logo img {
+  width: 150px;
+}
+
+.nav ul {
+  display: flex;
+}
+ul li {
+  list-style: none;
+  margin-right: 30px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 350;
+  text-transform: uppercase;
+}
+
+.border {
+  border-bottom: 2px solid white;
+}
+
+/* ----- Hamburger Menu ----- */
+
+.menu-toggle {
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+  display: none;
+  /* top: -35px; */
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  opacity: 0;
+  left: -10px;
+  top: -6px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+@media only screen and (max-width: 724px) {
+  .nav-title ul {
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    height: 100vh;
+    top: 0;
+    background: black;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: -100;
+    background: #730ad4;
+    width: 30%;
+    transform: translateX(100%);
+    transition: all 1s;
+  }
+
+  .nav-title ul.slide {
+    transform: translateX(0);
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  .header-left {
+    flex-basis: 100%;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav {
+    padding: 30px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .nav {
+    padding: 20px;
+  }
+}

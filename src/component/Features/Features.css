@@ -1,0 +1,19 @@
+.features-row {
+  display: flex;
+  flex-direction: row;
+  margin: 50px auto;
+  width: 90%;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 708px) {
+  .features-col {
+    flex-basis: 100%;
+    flex-direction: column;
+    margin: 10px auto;
+  }
+
+  .features-row {
+    flex-wrap: wrap;
+  }
+}
